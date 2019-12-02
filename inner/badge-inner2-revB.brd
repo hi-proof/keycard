@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -300,10 +300,20 @@
 <package name="KEYCARD-SHORT">
 <wire x1="27" y1="57.58579375" x2="27" y2="0" width="0.127" layer="20"/>
 <wire x1="27" y1="0" x2="-27" y2="0" width="0.127" layer="20"/>
-<wire x1="-27" y1="0" x2="-27" y2="57.58579375" width="0.127" layer="20"/>
+<wire x1="-27" y1="0" x2="-27" y2="9.023" width="0.127" layer="20"/>
+<wire x1="-27" y1="14.123" x2="-27" y2="21.469" width="0.127" layer="20"/>
+<wire x1="-27" y1="26.569" x2="-27" y2="57.58579375" width="0.127" layer="20"/>
 <wire x1="-27" y1="57.58579375" x2="-23.58579375" y2="61" width="0.127" layer="20" curve="-90"/>
 <wire x1="-23.58579375" y1="61" x2="23.58579375" y2="61" width="0.127" layer="20"/>
 <wire x1="23.58579375" y1="61" x2="27" y2="57.58579375" width="0.127" layer="20" curve="-90"/>
+<wire x1="7.25" y1="55.25" x2="7.25" y2="53.158796875" width="0.127" layer="46"/>
+<wire x1="7.25" y1="53.158796875" x2="6.091203125" y2="52" width="0.127" layer="46" curve="-90"/>
+<wire x1="6.091203125" y1="52" x2="-6.091203125" y2="52" width="0.127" layer="46"/>
+<wire x1="-6.091203125" y1="52" x2="-7.25" y2="53.158796875" width="0.127" layer="46" curve="-90"/>
+<wire x1="-7.25" y1="53.158796875" x2="-7.25" y2="55.25" width="0.127" layer="46"/>
+<wire x1="-7.25" y1="55.25" x2="-6" y2="56.5" width="0.127" layer="46" curve="-90"/>
+<wire x1="-6" y1="56.5" x2="6" y2="56.5" width="0.127" layer="46"/>
+<wire x1="6" y1="56.5" x2="7.25" y2="55.25" width="0.127" layer="46" curve="-90"/>
 <wire x1="7.25" y1="55.25" x2="7.25" y2="53.158796875" width="0.127" layer="20"/>
 <wire x1="7.25" y1="53.158796875" x2="6.091203125" y2="52" width="0.127" layer="20" curve="-90"/>
 <wire x1="6.091203125" y1="52" x2="-6.091203125" y2="52" width="0.127" layer="20"/>
@@ -312,6 +322,12 @@
 <wire x1="-7.25" y1="55.25" x2="-6" y2="56.5" width="0.127" layer="20" curve="-90"/>
 <wire x1="-6" y1="56.5" x2="6" y2="56.5" width="0.127" layer="20"/>
 <wire x1="6" y1="56.5" x2="7.25" y2="55.25" width="0.127" layer="20" curve="-90"/>
+<wire x1="-27" y1="9.023" x2="-25.35" y2="9.023" width="0.127" layer="20"/>
+<wire x1="-25.35" y1="9.023" x2="-25.35" y2="14.123" width="0.127" layer="20"/>
+<wire x1="-27" y1="14.123" x2="-25.35" y2="14.123" width="0.127" layer="20"/>
+<wire x1="-27" y1="21.469" x2="-25.35" y2="21.469" width="0.127" layer="20"/>
+<wire x1="-25.35" y1="21.469" x2="-25.35" y2="26.569" width="0.127" layer="20"/>
+<wire x1="-27" y1="26.569" x2="-25.35" y2="26.569" width="0.127" layer="20"/>
 </package>
 </packages>
 </library>
@@ -792,7 +808,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="50" y="56.27" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="51.143" y="56.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="SW2" library="shlomo" package="EVQP4KB" value="" x="0" y="11.5" smashed="yes" rot="R270"/>
+<element name="SW2" library="shlomo" package="EVQP4KB" value="" x="0" y="11.5762" smashed="yes" rot="R270"/>
 <element name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF" x="6" y="9.5" smashed="yes">
 <attribute name="NAME" x="6" y="10.262" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-08604" x="6" y="9.5" size="10.16" layer="27" ratio="15" display="off"/>
@@ -1074,8 +1090,8 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="SW2" pad="1"/>
 <contactref element="R5" pad="1"/>
-<wire x1="2.575" y1="13.775" x2="5.15" y2="13.775" width="0.254" layer="1"/>
-<wire x1="5.15" y1="13.775" x2="5.15" y2="13.5" width="0.254" layer="1"/>
+<wire x1="2.575" y1="13.8512" x2="5.15" y2="13.8512" width="0.254" layer="1"/>
+<wire x1="5.15" y1="13.8512" x2="5.15" y2="13.5" width="0.254" layer="1"/>
 </signal>
 <signal name="SW2">
 <contactref element="R5" pad="2"/>

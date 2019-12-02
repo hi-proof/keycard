@@ -11,11 +11,11 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -40,8 +40,8 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -1424,7 +1424,7 @@
 <vertex x="27.22648125" y="41.616109375"/>
 <vertex x="27.24743125" y="49.022209375"/>
 </polygon>
-<text x="4.953" y="4.699" size="6.858" layer="21" font="vector" ratio="10">MULTI PASS</text>
+<text x="4.953" y="4.699" size="6.858" layer="21" font="vector" ratio="10">ALL ACCESS</text>
 <wire x1="6.079" y1="7.982" x2="6.079" y2="3.907" width="0.01" layer="201"/>
 <wire x1="6.079" y1="3.907" x2="7.729" y2="3.907" width="0.01" layer="201"/>
 <wire x1="7.729" y1="3.907" x2="8.55338125" y2="3.926990625" width="0.01" layer="201" curve="2.78"/>
@@ -2889,6 +2889,8 @@
 <wire x1="41.80578125" y1="67.633290625" x2="41.552259375" y2="67.79681875" width="0.01" layer="202" curve="36.67"/>
 <wire x1="41.552259375" y1="67.79681875" x2="41.182609375" y2="67.80361875" width="0.01" layer="202" curve="26.87"/>
 <wire x1="41.182609375" y1="67.80361875" x2="40.88" y2="67.638" width="0.01" layer="202" curve="32.62"/>
+<hole x="22.098" y="79.248" drill="2.54"/>
+<hole x="32.004" y="79.248" drill="2.54"/>
 </plain>
 <libraries>
 <library name="shlomo">
@@ -2902,6 +2904,14 @@
 <wire x1="23.58579375" y1="43" x2="27" y2="39.58579375" width="0.127" layer="20" curve="-90"/>
 <wire x1="27" y1="39.58579375" x2="27" y2="-39.58579375" width="0.127" layer="20"/>
 <wire x1="27" y1="-39.58579375" x2="23.58579375" y2="-43" width="0.127" layer="20" curve="-90"/>
+<wire x1="7.25" y1="37.25" x2="7.25" y2="35.158796875" width="0.127" layer="46"/>
+<wire x1="7.25" y1="35.158796875" x2="6.091203125" y2="34" width="0.127" layer="46" curve="-90"/>
+<wire x1="6.091203125" y1="34" x2="-6.091203125" y2="34" width="0.127" layer="46"/>
+<wire x1="-6.091203125" y1="34" x2="-7.25" y2="35.158796875" width="0.127" layer="46" curve="-90"/>
+<wire x1="-7.25" y1="35.158796875" x2="-7.25" y2="37.25" width="0.127" layer="46"/>
+<wire x1="-7.25" y1="37.25" x2="-6" y2="38.5" width="0.127" layer="46" curve="-90"/>
+<wire x1="-6" y1="38.5" x2="6" y2="38.5" width="0.127" layer="46"/>
+<wire x1="6" y1="38.5" x2="7.25" y2="37.25" width="0.127" layer="46" curve="-90"/>
 <wire x1="7.25" y1="37.25" x2="7.25" y2="35.158796875" width="0.127" layer="20"/>
 <wire x1="7.25" y1="35.158796875" x2="6.091203125" y2="34" width="0.127" layer="20" curve="-90"/>
 <wire x1="6.091203125" y1="34" x2="-6.091203125" y2="34" width="0.127" layer="20"/>
